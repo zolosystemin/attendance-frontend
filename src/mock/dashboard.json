@@ -1,0 +1,109 @@
+{
+  "candidate": {
+    "profileCompleted": false,
+    "profileStrength": 65,
+    "resumeStrength": 82,
+    "stats": {
+      "matchedJobs": 18,
+      "mockInterviews": 4,
+      "enrolledCourses": 3,
+      "completedCourses": 1,
+       "mockTests": 2,
+       "jobsApplied": 7
+    },
+    "matchedJobs": [
+      {
+        "id": 1,
+        "role": "Frontend Developer",
+        "company": "TechNova",
+        "location": "Remote",
+        "experience": "2–4 yrs"
+      },
+      {
+        "id": 2,
+        "role": "React Engineer",
+        "company": "CodeLabs",
+        "location": "Bangalore",
+        "experience": "3–5 yrs"
+      },
+      {
+        "id": 3,
+        "role": "React Engineer",
+        "company": "CodeLabs",
+        "location": "Bangalore",
+        "experience": "3–5 yrs"
+      },
+      {
+        "id": 4,
+        "role": "React Engineer",
+        "company": "CodeLabs",
+        "location": "Bangalore",
+        "experience": "3–5 yrs"
+      },
+      {
+        "id": 5,
+        "role": "React Engineer",
+        "company": "CodeLabs",
+        "location": "Bangalore",
+        "experience": "3–5 yrs"
+      },
+      {
+        "id": 6,
+        "role": "React Engineer",
+        "company": "CodeLabs",
+        "location": "Bangalore",
+        "experience": "3–5 yrs"
+      }
+    ],
+    "recommendedCourses": [
+      {
+        "id": 101,
+        "title": "Advanced React & Performance",
+        "level": "Advanced"
+      },
+      {
+        "id": 102,
+        "title": "DSA for Interviews",
+        "level": "Intermediate"
+      }
+    ]
+  },
+
+  "recruiter": {
+    "stats": {
+      "jobsPosted": 12,
+      "activeJobs": 7,
+      "expiredJobs": 5,
+      "totalApplicants": 340,
+      "rejectedCandidates": 250,
+      "shortlisted": 58,
+      "interviewsScheduled": 16,
+      "hiredCandidates": 22
+    },
+    "recentApplicants": [
+      {
+        "name": "Amit Sharma",
+        "role": "React Developer",
+        "status": "Shortlisted"
+      },
+      {
+        "name": "Neha Verma",
+        "role": "UI Engineer",
+        "status": "Interview Scheduled"
+      }
+    ]
+  },
+
+  "admin": {
+    "stats": {
+      "totalUsers": 1240,
+      "activeRecruiters": 92,
+      "activeCandidates": 1030,
+      "jobsPosted": 480
+    },
+    "systemAlerts": [
+      "High login traffic detected",
+      "3 Recruiters pending verification"
+    ]
+  }
+}

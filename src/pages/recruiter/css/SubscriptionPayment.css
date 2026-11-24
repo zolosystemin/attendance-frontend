@@ -1,0 +1,582 @@
+/* =========================================================
+   SUBSCRIPTION PAYMENT / CONFIRMATION PAGE
+========================================================= */
+
+.subscription-payment-page {
+    min-height: 100vh;
+    padding: 60px 0 80px;
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(99, 102, 241, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(16, 185, 129, 0.08),
+            transparent 30%
+        ),
+        #f8fafc;
+}
+
+
+/* =========================================================
+   SUCCESS HEADER
+========================================================= */
+
+.payment-success {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 35px;
+}
+
+.success-icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dcfce7;
+    color: #16a34a;
+
+    box-shadow:
+        0 10px 30px rgba(22, 163, 74, 0.15);
+}
+
+.payment-success h1 {
+    margin: 0 0 12px;
+
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+
+    color: #172033;
+}
+
+.payment-success p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.payment-success p strong {
+    color: #16a34a;
+}
+
+
+/* =========================================================
+   FREE PERIOD CARD
+========================================================= */
+
+.free-period-card {
+    max-width: 850px;
+    margin: 0 auto 28px;
+
+    padding: 22px 26px;
+
+    border: 1px solid #bbf7d0 !important;
+    border-radius: 16px !important;
+
+    background: linear-gradient(
+        135deg,
+        #f0fdf4,
+        #ecfdf5
+    ) !important;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(16, 185, 129, 0.08);
+}
+
+.free-period-icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.free-period-card h5 {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+    font-weight: 750;
+
+    color: #166534;
+}
+
+.free-period-card p {
+    margin: 0;
+
+    color: #4b6354;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.payment-card,
+.payment-summary-card {
+    height: 100%;
+
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 18px !important;
+
+    background: #ffffff !important;
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.05);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #eef2f7;
+
+    color: #475569;
+}
+
+.card-title h5 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 750;
+
+    color: #172033;
+}
+
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.details-list {
+    padding: 5px 25px 15px;
+}
+
+.detail-row {
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    font-size: 14px;
+}
+
+.detail-row:last-child {
+    border-bottom: 0;
+}
+
+.detail-row > span:first-child {
+    color: #64748b;
+}
+
+.detail-row strong {
+    color: #1e293b;
+    font-weight: 650;
+    text-align: right;
+}
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background: #dcfce7;
+    color: #15803d;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   PAYMENT SUMMARY
+========================================================= */
+
+.payment-summary-card {
+    padding: 25px;
+}
+
+.payment-summary-card h5 {
+    margin: 0 0 25px;
+
+    font-size: 17px;
+    font-weight: 750;
+
+    color: #172033;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+}
+
+.summary-row span:first-child {
+    color: #64748b;
+}
+
+.summary-row span:last-child {
+    color: #334155;
+    font-weight: 600;
+}
+
+.payment-summary-card hr {
+    margin: 22px 0;
+
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.total-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.total-row span {
+    color: #334155;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.total-row strong {
+    color: #16a34a;
+
+    font-size: 27px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   NO PAYMENT MESSAGE
+========================================================= */
+
+.free-message {
+    margin-top: 22px;
+    padding: 12px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 10px;
+
+    background: #f0fdf4;
+    color: #15803d;
+
+    font-size: 13px;
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   ACTIVATION CARD
+========================================================= */
+
+.activation-card {
+    max-width: 850px;
+
+    margin: 28px auto 0;
+    padding: 20px 24px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    border: 1px solid #dbeafe !important;
+    border-radius: 16px !important;
+
+    background: #eff6ff !important;
+
+    box-shadow: none;
+}
+
+.activation-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.activation-card h6 {
+    margin: 2px 0 5px;
+
+    color: #1e3a8a;
+
+    font-size: 15px;
+    font-weight: 750;
+}
+
+.activation-card p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FUTURE PAYMENT
+========================================================= */
+
+.future-payment-note {
+    max-width: 850px;
+
+    margin: 22px auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    text-align: center;
+}
+
+.future-payment-note strong {
+    color: #64748b;
+}
+
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.payment-actions {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.continue-button {
+    min-width: 210px;
+
+    padding: 12px 22px !important;
+
+    border: 0 !important;
+    border-radius: 10px !important;
+
+    background: #16a34a !important;
+
+    color: #ffffff !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 8px 20px rgba(22, 163, 74, 0.18);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.continue-button:hover {
+    background: #15803d !important;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 10px 25px rgba(22, 163, 74, 0.25);
+}
+
+.continue-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .subscription-payment-page {
+        padding: 45px 0 60px;
+    }
+
+    .payment-success h1 {
+        font-size: 30px;
+    }
+
+    .payment-summary-card {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .subscription-payment-page {
+        padding: 30px 0 50px;
+    }
+
+    .payment-success {
+        margin-bottom: 25px;
+    }
+
+    .success-icon {
+        width: 68px;
+        height: 68px;
+    }
+
+    .success-icon svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .payment-success h1 {
+        font-size: 26px;
+    }
+
+    .payment-success p {
+        font-size: 14px;
+    }
+
+    .free-period-card {
+        padding: 18px;
+    }
+
+    .free-period-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .card-title {
+        padding: 18px;
+    }
+
+    .details-list {
+        padding: 5px 18px 12px;
+    }
+
+    .detail-row {
+        min-height: 54px;
+        font-size: 13px;
+    }
+
+    .payment-summary-card {
+        padding: 20px;
+    }
+
+    .activation-card {
+        padding: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .payment-success h1 {
+        font-size: 23px;
+    }
+
+    .free-period-card {
+        align-items: flex-start;
+    }
+
+    .free-period-card h5 {
+        font-size: 16px;
+    }
+
+    .free-period-card p {
+        font-size: 13px;
+    }
+
+    .detail-row {
+        align-items: flex-start;
+        padding: 14px 0;
+    }
+
+    .detail-row strong {
+        max-width: 50%;
+    }
+
+    .total-row strong {
+        font-size: 23px;
+    }
+
+    .continue-button {
+        width: 100%;
+    }
+}

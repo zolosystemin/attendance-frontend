@@ -1,0 +1,286 @@
+/* ===== Welcome Card (Light Theme) ===== */
+.welcome-card {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 110, 253, 0.10),
+    rgba(13, 110, 253, 0.04)
+  ) !important;
+
+  border: 1px solid rgba(13, 110, 253, 0.18) !important;
+  border-radius: 12px;
+}
+
+/* Text colors */
+.welcome-card h5 {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+.welcome-card small {
+  color: #495057 !important;
+}
+
+.welcome-card i {
+  color: #0d6efd !important;
+}
+
+/* Optional subtle hover */
+.welcome-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(13, 110, 253, 0.15);
+  transition: all 0.25s ease;
+}
+
+
+/* ===== Dashboard Loader ===== */
+.dashboard-loader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+
+/* =========================
+   BOOTSTRAP CARD FIX
+========================= */
+
+.card {
+  overflow: visible !important;
+  position: relative;
+}
+
+/* =========================
+   BASE HOVER LIFT
+========================= */
+
+.hover-lift {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
+  z-index: 5;
+}
+
+/* =========================
+   PARTIAL COLOR OVERLAY
+========================= */
+
+.card.hover-lift::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.card.hover-lift:hover::before {
+  opacity: 1;
+}
+
+.text-applied {
+  color: #20c997 !important;
+}
+
+.text-mock {
+  color: #6f42c1 !important;
+}
+
+
+/* =========================
+   COLOR THEMES
+========================= */
+
+.card.hover-primary::before {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 110, 253, 0.12),
+    rgba(13, 110, 253, 0.02)
+  );
+}
+
+.card.hover-success::before {
+  background: linear-gradient(
+    135deg,
+    rgba(25, 135, 84, 0.12),
+    rgba(25, 135, 84, 0.02)
+  );
+}
+
+.card.hover-warning::before {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 193, 7, 0.15),
+    rgba(255, 193, 7, 0.03)
+  );
+}
+
+.card.hover-info::before {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 202, 240, 0.14),
+    rgba(13, 202, 240, 0.03)
+  );
+}
+
+.card.hover-mock::before {
+  background: linear-gradient(
+    135deg,
+    rgba(111, 66, 193, 0.14),
+    rgba(111, 66, 193, 0.03)
+  );
+}
+
+.card.hover-applied::before {
+  background: linear-gradient(
+    135deg,
+    rgba(32, 201, 151, 0.14),
+    rgba(32, 201, 151, 0.03)
+  );
+}
+
+/* =========================
+   SHADOW BY COLOR
+========================= */
+
+.card.hover-primary:hover {
+  box-shadow: 0 22px 50px rgba(13, 110, 253, 0.35);
+}
+
+.card.hover-success:hover {
+  box-shadow: 0 22px 50px rgba(25, 135, 84, 0.35);
+}
+
+.card.hover-warning:hover {
+  box-shadow: 0 22px 50px rgba(255, 193, 7, 0.45);
+}
+
+.card.hover-info:hover {
+  box-shadow: 0 22px 50px rgba(13, 202, 240, 0.45);
+}
+
+.card.hover-applied:hover {
+  box-shadow: 0 22px 50px rgba(32, 201, 151, 0.4);
+}
+
+.card.hover-mock:hover {
+  box-shadow: 0 22px 50px rgba(111, 66, 193, 0.4);
+}
+/* =========================
+   ICON ZOOM
+========================= */
+
+.card.hover-lift i {
+  transition: transform 0.3s ease;
+}
+
+.card.hover-lift:hover i {
+  transform: scale(1.25);
+}
+
+/* =========================
+   JOB ROW HOVER
+========================= */
+
+.job-row {
+  position: relative;
+  border-radius: 10px;
+  padding: 12px;
+  transition: transform 0.25s ease, background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.job-row:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(13, 110, 253, 0.08),
+    rgba(13, 110, 253, 0.02)
+  );
+  transform: translateX(6px);
+  box-shadow: 0 8px 22px rgba(13, 110, 253, 0.15);
+}
+
+.job-row strong {
+  transition: color 0.25s ease;
+}
+
+.job-row:hover strong {
+  color: #0d6efd;
+}
+
+/* =========================
+   RECOMMENDED COURSE CARD
+========================= */
+
+.card.animate-fade:hover {
+  box-shadow: 0 16px 40px rgba(25, 135, 84, 0.25);
+}
+
+/* =========================
+   FADE & SCALE
+========================= */
+
+.animate-fade {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.animate-scale {
+  animation: scaleIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   PROGRESS BAR POLISH
+========================= */
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #adb5bd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}

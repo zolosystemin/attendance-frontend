@@ -1,0 +1,36 @@
+
+ /* Footer link underline animation */
+.footer-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff !important;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Social icon hover */
+.footer-social {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-social:hover {
+  color: #ffffff !important;
+  transform: translateY(-3px);
+}
+

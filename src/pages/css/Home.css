@@ -1,0 +1,920 @@
+/* ==========================
+   ZOLO ENTERPRISE HOME
+========================== */
+:root {
+
+  --zs-primary:#2563eb;
+  --zs-secondary:#4f46e5;
+  --zs-dark:#071426;
+
+  --zs-text:#0f172a;
+  --zs-muted:#64748b;
+
+  --zs-bg:#f8fafc;
+
+  --zs-border:#e2e8f0;
+
+
+  --zs-gradient:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+
+  --zs-shadow:
+  0 25px 70px
+  rgba(15,23,42,.12);
+
+}
+
+/* ==========================
+   GLOBAL
+========================== */
+
+
+body {
+
+  background:var(--bg);
+
+  color:var(--text);
+
+  font-family:
+  Inter,
+  "Segoe UI",
+  sans-serif;
+
+}
+
+
+section {
+
+  overflow:hidden;
+
+}
+
+
+
+/* ==========================
+   HERO
+========================== */
+
+
+.enterprise-hero {
+
+
+  min-height:90vh;
+
+  display:flex;
+
+  align-items:center;
+
+
+  background:
+
+
+  radial-gradient(
+    circle at top left,
+    #dbeafe,
+    transparent 35%
+  ),
+
+
+  linear-gradient(
+    135deg,
+    #f8fafc,
+    #ffffff
+  );
+
+
+  padding:100px 0;
+
+}
+
+
+
+.hero-badge {
+
+
+  display:inline-flex;
+
+  padding:
+
+  8px 18px;
+
+
+  border-radius:40px;
+
+
+  background:#dbeafe;
+
+
+  color:var(--primary);
+
+
+  font-weight:700;
+
+
+  font-size:14px;
+
+
+  margin-bottom:25px;
+
+}
+
+
+
+
+.hero-title {
+
+
+  font-size:60px;
+
+  line-height:1.1;
+
+  font-weight:900;
+
+  letter-spacing:-2px;
+
+
+}
+
+
+
+.hero-title span {
+
+
+  display:block;
+
+
+  color:var(--primary);
+
+
+}
+
+
+
+.hero-description {
+
+
+  margin-top:25px;
+
+
+  max-width:620px;
+
+
+  font-size:18px;
+
+
+  line-height:1.8;
+
+
+  color:var(--muted);
+
+}
+
+
+
+
+.hero-buttons {
+
+
+  display:flex;
+
+  gap:18px;
+
+  margin-top:35px;
+
+
+}
+
+
+.hero-buttons button:first-child {
+
+
+  background:
+  linear-gradient(
+  135deg,
+  #2563eb,
+  #4f46e5
+  );
+
+
+  border:none;
+
+
+  box-shadow:
+
+  0 15px 35px
+  rgba(37,99,235,.30);
+
+
+}
+
+
+
+
+
+.hero-stats {
+
+
+  display:flex;
+
+  gap:25px;
+
+  margin-top:55px;
+
+
+}
+
+
+.hero-stats div {
+
+
+  background:white;
+
+
+  padding:18px 25px;
+
+
+  border-radius:18px;
+
+
+  border:1px solid var(--border);
+
+
+  box-shadow:
+
+  0 10px 25px
+  rgba(15,23,42,.06);
+
+
+}
+
+
+
+.hero-stats h3 {
+
+
+  font-size:30px;
+
+  font-weight:800;
+
+  margin:0;
+
+
+}
+
+
+
+.hero-stats span {
+
+
+  font-size:13px;
+
+  color:var(--muted);
+
+
+}
+
+
+
+/* ==========================
+   HERO DASHBOARD
+========================== */
+
+
+.hero-dashboard {
+
+
+ background:
+
+ linear-gradient(
+ 145deg,
+ #0f172a,
+ #2563eb
+ );
+
+
+ border-radius:28px;
+
+
+ padding:35px;
+
+
+ color:white;
+
+
+ box-shadow:
+
+ 0 30px 70px
+ rgba(15,23,42,.25);
+
+
+}
+
+
+
+.dashboard-header {
+
+
+ display:flex;
+
+ gap:12px;
+
+ align-items:center;
+
+
+ font-size:18px;
+
+ font-weight:700;
+
+
+ margin-bottom:30px;
+
+
+}
+
+
+
+.dashboard-item {
+
+
+ display:flex;
+
+ align-items:center;
+
+ gap:18px;
+
+
+ padding:18px;
+
+
+ margin-bottom:15px;
+
+
+ border-radius:18px;
+
+
+ background:
+
+ rgba(255,255,255,.12);
+
+
+ backdrop-filter:blur(10px);
+
+
+}
+
+
+
+.dashboard-item svg {
+
+
+ font-size:30px;
+
+
+}
+
+
+
+.dashboard-item strong {
+
+
+ display:block;
+
+}
+
+
+
+.dashboard-item span {
+
+
+ color:
+
+ rgba(255,255,255,.75);
+
+ font-size:13px;
+
+
+}
+
+
+
+
+/* ==========================
+ TRUST SECTION
+========================== */
+
+
+.trust-section {
+
+
+ padding:50px 0;
+
+
+ background:white;
+
+
+ text-align:center;
+
+
+}
+
+
+
+.trust-section h5 {
+
+
+ color:var(--muted);
+
+ margin-bottom:30px;
+
+
+}
+
+
+
+.trust-box {
+
+
+ height:90px;
+
+
+ display:flex;
+
+ align-items:center;
+
+ justify-content:center;
+
+
+ border-radius:18px;
+
+
+ background:#f8fafc;
+
+
+ border:1px solid var(--border);
+
+
+ font-weight:700;
+
+
+ color:#334155;
+
+
+ transition:.3s;
+
+
+}
+
+
+
+.trust-box:hover {
+
+
+ transform:translateY(-5px);
+
+
+ border-color:#93c5fd;
+
+
+}
+
+
+
+
+/* ==========================
+ SECTION COMMON
+========================== */
+
+
+.section-space {
+
+
+ padding:90px 0;
+
+
+}
+
+
+
+.section-heading {
+
+
+ text-align:center;
+
+ margin-bottom:55px;
+
+
+}
+
+
+
+.section-heading h2 {
+
+
+ font-size:42px;
+
+ font-weight:900;
+
+
+}
+
+
+
+.section-heading p {
+
+
+ color:var(--muted);
+
+ font-size:17px;
+
+
+}
+
+
+
+/* ==========================
+ SOLUTION CARDS
+========================== */
+
+
+.solution-card {
+
+
+ height:100%;
+
+
+ border:none;
+
+
+ border-radius:24px;
+
+
+ background:white;
+
+
+ padding:10px;
+
+
+ box-shadow:
+
+ 0 20px 45px
+ rgba(15,23,42,.08);
+
+
+ transition:.35s;
+
+
+}
+
+
+
+.solution-card:hover {
+
+
+ transform:
+ translateY(-10px);
+
+
+ box-shadow:
+
+ 0 30px 60px
+ rgba(37,99,235,.15);
+
+
+}
+
+
+
+.solution-icon {
+
+
+ width:70px;
+
+ height:70px;
+
+
+ display:flex;
+
+ align-items:center;
+
+ justify-content:center;
+
+
+ border-radius:18px;
+
+
+ background:#dbeafe;
+
+
+ color:var(--primary);
+
+
+}
+
+
+
+.solution-card h3 {
+
+
+ margin-top:25px;
+
+
+ font-weight:800;
+
+
+}
+
+
+
+.solution-card p {
+
+
+ color:var(--muted);
+
+
+}
+
+
+
+.solution-card ul {
+
+
+ padding:0;
+
+ list-style:none;
+
+
+}
+
+
+
+.solution-card li {
+
+
+ display:flex;
+
+ gap:10px;
+
+
+ margin:14px 0;
+
+
+ color:#334155;
+
+
+}
+
+
+
+.solution-card svg {
+
+
+ color:#10b981;
+
+}
+
+
+
+
+
+/* ==========================
+ PRODUCTS
+========================== */
+
+
+.product-section {
+
+
+ padding:90px 0;
+
+
+ background:white;
+
+
+}
+
+
+
+.product-card {
+
+
+ border:none;
+
+
+ border-radius:28px;
+
+
+ padding:15px;
+
+
+ background:
+
+
+ linear-gradient(
+ 145deg,
+ #ffffff,
+ #f8fafc
+ );
+
+
+ box-shadow:
+
+ 0 25px 60px
+ rgba(15,23,42,.08);
+
+
+}
+
+
+
+.product-icon {
+
+
+ color:var(--primary);
+
+
+ margin-bottom:20px;
+
+
+}
+
+
+
+.product-card h3 {
+
+
+ font-size:32px;
+
+ font-weight:900;
+
+
+}
+
+
+
+.product-card p {
+
+
+ color:var(--muted);
+
+
+ font-size:16px;
+
+
+}
+
+
+
+.product-tag {
+
+
+ margin-right:10px;
+
+
+ margin-top:15px;
+
+
+ padding:8px 14px;
+
+
+ border-radius:30px;
+
+
+ background:#dbeafe;
+
+
+ color:#2563eb;
+
+
+}
+
+
+
+
+
+/* ==========================
+ RESPONSIVE
+========================== */
+
+
+@media(max-width:992px){
+
+
+.hero-title{
+
+font-size:42px;
+
+}
+
+
+.hero-stats{
+
+flex-wrap:wrap;
+
+}
+
+
+.hero-dashboard{
+
+margin-top:40px;
+
+}
+
+
+}
+
+
+@media(max-width:576px){
+
+
+.hero-title{
+
+font-size:34px;
+
+}
+
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+
+.hero-stats{
+
+flex-direction:column;
+
+}
+
+
+.section-heading h2{
+
+font-size:32px;
+
+}
+
+
+}
+
+/* ==========================
+   SECTION SPACING SYSTEM
+========================== */
+
+.enterprise-hero {
+  padding: 110px 0;
+}
+
+
+.trust-section {
+  padding: 70px 0;
+}
+
+
+.section-space {
+  padding: 100px 0;
+}
+
+
+.product-section {
+  padding: 100px 0;
+}
+
+
+.why-section {
+  padding: 100px 0;
+  background:#f8fafc;
+}
+
+
+.security-section {
+  padding:100px 0;
+}
+
+
+.industry-section {
+  padding:100px 0;
+  background:#ffffff;
+}
+
+
+.cta-section {
+
+  margin-top:80px;
+
+  padding:80px 0;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color:white;
+
+}

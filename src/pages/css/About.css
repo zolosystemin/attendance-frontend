@@ -1,0 +1,44 @@
+.timeline-container {
+  position: relative;
+  height: 180px;
+  margin-top: 50px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #4f46e5;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: absolute;
+  top: 0;
+  width: 180px;
+  transform: translateX(-50%);
+}
+
+.timeline-marker {
+  width: 50px;
+  height: 50px;
+  background: #4f46e5;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}

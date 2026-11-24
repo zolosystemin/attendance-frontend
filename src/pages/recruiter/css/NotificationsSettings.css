@@ -1,0 +1,899 @@
+/* ==========================================
+   Theme Variables
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --success:#16a34a;
+    --warning:#f59e0b;
+    --danger:#dc2626;
+
+    --background:#f5f7fb;
+    --surface:#ffffff;
+
+    --text:#111827;
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    --radius:16px;
+
+    --shadow-sm:0 4px 12px rgba(15,23,42,.05);
+    --shadow:0 8px 24px rgba(15,23,42,.06);
+    --shadow-lg:0 18px 45px rgba(15,23,42,.10);
+
+    --transition:.25s ease;
+
+}
+
+/* =========================
+   Employee Notifications
+========================= */
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        Roboto,
+        sans-serif;
+
+}
+
+.card{
+    border:none;
+    border-radius:var(--radius);
+    background:var(--surface);
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow-lg);
+}
+
+/* =========================
+   Header
+========================= */
+
+body {
+    background: #f5f7fb;
+}
+
+.page-title{
+    font-weight:700;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15,23,42,.06);
+    transition: all .25s ease;
+}
+
+.btn{
+    border-radius:10px;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.badge {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+
+.stat-card{
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.page-subtitle {
+    color: #6b7280;
+    font-size: .95rem;
+}
+
+/* =========================
+   Dashboard Cards
+========================= */
+
+.dashboard-card {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dashboard-card .card-body {
+    padding: 22px;
+}
+
+.dashboard-card small {
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: .75rem;
+}
+
+.dashboard-card h2 {
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.dashboard-card i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 2.5rem;
+    opacity: .15;
+}
+
+/* =========================
+   Search Section
+========================= */
+
+.input-group-text {
+    background: #fff;
+    border-right: none;
+}
+
+.form-control {
+    border-left: none;
+}
+
+.form-control,
+.form-select {
+    height: 46px;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    padding: 10px 18px;
+}
+
+.btn-danger {
+    padding: 10px 18px;
+}
+
+.btn-light {
+    border: 1px solid #e5e7eb;
+}
+
+.btn-light:hover {
+    background: #f3f4f6;
+}
+
+/* =========================
+   Table
+========================= */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 18px 15px;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: all .2s ease;
+}
+
+.table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.table tbody tr td:first-child {
+    width: 55px;
+}
+
+/* =========================
+   Notification Title
+========================= */
+
+.notification-title {
+    font-weight: 600;
+    color: #111827;
+}
+
+.notification-desc {
+    color: #6b7280;
+    font-size: .85rem;
+}
+
+/* =========================
+   Badges
+========================= */
+
+.badge {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+
+/* =========================
+   Action Buttons
+========================= */
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn i {
+    font-size: 15px;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Search Card
+========================= */
+
+.search-card .card-body {
+    padding: 18px 22px;
+}
+
+/* =========================
+   Statistics Cards
+========================= */
+
+.stats-blue {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: #fff;
+}
+
+.stats-green {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #fff;
+}
+
+.stats-orange {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff;
+}
+
+.stats-purple {
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    color: #fff;
+}
+
+.stats-blue small,
+.stats-green small,
+.stats-orange small,
+.stats-purple small {
+    color: rgba(255,255,255,.85);
+}
+
+.stats-blue i,
+.stats-green i,
+.stats-orange i,
+.stats-purple i {
+    opacity: .18;
+}
+
+/* =========================
+   Empty State
+========================= */
+
+.empty-state {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.empty-state i {
+    font-size: 70px;
+    color: #cbd5e1;
+}
+
+.empty-state h5 {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.empty-state p {
+    color: #6b7280;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 992px) {
+
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+
+    .table {
+        min-width: 900px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .page-title {
+        font-size: 1.4rem;
+    }
+
+    .dashboard-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-control,
+    .form-select {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* ===============================
+   Create Notification Modal
+==================================*/
+
+.modal-xl {
+    max-width: 1200px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,.15);
+}
+
+.modal-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #ececec;
+}
+
+.modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #ececec;
+}
+
+/* ===============================
+   Wizard Left Menu
+==================================*/
+
+.wizard-sidebar{
+    background:#f8f9fb;
+    min-height:650px;
+}
+
+.wizard-item{
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    margin-bottom:8px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+    font-weight:600;
+    color:#555;
+}
+
+.wizard-item:hover{
+    background:#e9f2ff;
+    color:#0d6efd;
+}
+
+.wizard-item.active{
+    background:#0d6efd;
+    color:#fff;
+    box-shadow:0 8px 20px rgba(13,110,253,.25);
+}
+
+.wizard-item i{
+    font-size:18px;
+    width:28px;
+}
+
+/* ===============================
+   Right Content
+==================================*/
+
+.wizard-content{
+    background:#fff;
+    min-height:650px;
+}
+
+.wizard-content h5{
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.wizard-content .form-label{
+    font-weight:600;
+    color:#444;
+}
+
+.wizard-content .form-control,
+.wizard-content .form-select{
+
+    height:48px;
+    border-radius:12px;
+    border:1px solid #dfe3e8;
+    box-shadow:none;
+}
+
+.wizard-content textarea.form-control{
+    min-height:220px;
+    resize:vertical;
+}
+
+.wizard-content .form-control:focus,
+.wizard-content .form-select:focus{
+
+    border-color:#0d6efd;
+    box-shadow:0 0 0 .2rem rgba(13,110,253,.12);
+
+}
+
+/* ===============================
+   Preview Card
+==================================*/
+
+.preview-card{
+
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.preview-header{
+
+    padding:25px;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+
+}
+
+.preview-body{
+
+    padding:30px;
+    background:white;
+    min-height:300px;
+
+}
+
+.preview-body p{
+
+    font-size:15px;
+    line-height:1.8;
+
+}
+
+.form-check{
+
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:15px;
+    transition:.25s;
+
+}
+
+.form-check:hover{
+
+    border-color:#2563eb;
+    background:#f8fbff;
+
+}
+
+.form-check-input{
+
+    margin-top:5px;
+
+}
+
+.form-check-label{
+
+    font-weight:600;
+
+}
+
+/* ===============================
+   Buttons
+==================================*/
+
+.modal-footer .btn{
+
+    min-width:120px;
+    border-radius:10px;
+    font-weight:600;
+
+}
+
+/* ===============================
+   Scrollbar
+==================================*/
+
+.wizard-content::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.wizard-content::-webkit-scrollbar-thumb{
+
+    background:#d5d5d5;
+    border-radius:20px;
+
+}
+
+/* ===============================
+   Responsive
+==================================*/
+
+@media(max-width:768px){
+
+    .wizard-sidebar{
+
+        min-height:auto;
+        border-bottom:1px solid #eee;
+
+    }
+
+    .wizard-item{
+
+        margin-bottom:5px;
+
+    }
+
+    .wizard-content{
+
+        min-height:auto;
+
+    }
+
+}
+
+/* ==========================================
+   Premium Dashboard Cards
+========================================== */
+
+.stats-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:all .30s ease;
+
+    color:#fff;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.stats-primary{
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+}
+
+.stats-success{
+
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+
+}
+
+.stats-warning{
+
+    background:linear-gradient(135deg,#d97706,#f59e0b);
+
+}
+
+.stats-secondary{
+
+    background:linear-gradient(135deg,#64748b,#94a3b8);
+
+}
+
+.stats-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.stats-title{
+
+    font-size:13px;
+
+    opacity:.9;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.stats-header h2{
+
+    font-size:36px;
+
+    margin-top:10px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.stats-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.18);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.stats-icon i{
+
+    font-size:28px;
+
+    color:#fff;
+
+}
+
+.stats-footer{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    opacity:.95;
+
+}
+
+.stats-footer small{
+
+    color:rgba(255,255,255,.9);
+
+}
+
+/* ==========================================
+   Search Toolbar
+========================================== */
+
+.search-toolbar{
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.search-toolbar .card-body{
+
+    padding:20px;
+
+}
+
+.search-box{
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    transition:.25s;
+
+    background:white;
+
+}
+
+.search-box:focus-within{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(37,99,235,.08);
+}
+
+.search-box .input-group-text{
+    border:none;
+    background:white;
+    color:#6b7280;
+}
+
+.search-box .form-control{
+    border:none;
+    box-shadow:none;
+}
+
+.search-toolbar .form-select{
+    height:48px;
+    border-radius:12px;
+}
+
+/* ==========================================
+   Premium Toolbar Buttons
+========================================== */
+.toolbar-actions{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.toolbar-actions .btn{
+    min-width:110px;
+    height:46px;
+
+    border-radius:12px;
+
+    border:1px solid #e5e7eb;
+
+    background:#fff;
+
+    color:#374151;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:all .25s ease;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+
+.toolbar-actions .btn i{
+    font-size:16px;
+    transition:.25s;
+}
+
+.toolbar-actions .btn:hover{
+    background:#f8fbff;
+    border-color:#2563eb;
+    color:#2563eb;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(37,99,235,.12);
+}
+
+.toolbar-actions .btn:hover i{
+    transform:rotate(-8deg) scale(1.1);
+}
+
+.toolbar-actions .btn:active{
+    transform:scale(.97);
+}
+
+/* Primary button if any */
+.toolbar-actions .btn-primary{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:#fff;
+    border:none;
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+
+.toolbar-actions .btn-primary:hover{
+    color:#fff;
+    background:linear-gradient(135deg,#1d4ed8,#1e40af);
+}
+
+
+.notification-modal .modal-content{
+    border:0;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.notification-modal .modal-header{
+    padding:24px 28px;
+    background:#fff;
+}
+
+.notification-modal .modal-body{
+    background:#f8fafc;
+    padding:28px;
+}
+
+.notification-modal .modal-footer{
+    background:#fff;
+    padding:18px 28px;
+}
+
+.notification-modal .card{
+    border-radius:16px;
+}
+
+.notification-modal textarea{
+    resize:none;
+}
+
+.notification-modal .sticky-top{
+    top:10px;
+}

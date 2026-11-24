@@ -1,0 +1,173 @@
+.settings-page {
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.settings-wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-header h3 {
+  font-weight: 600;
+}
+
+.sidebar {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  color: #444;
+}
+
+.sidebar .nav-link.active {
+  background: #0d6efd;
+  color: #fff !important;
+}
+
+/* Cards */
+.card-modern {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.card-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Methods */
+.method-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.method-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.method-box:hover {
+  background: #f1f5ff;
+}
+
+.method-box.active {
+  border-color: #0d6efd;
+  background: #eef4ff;
+}
+
+.method-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.method-left i {
+  font-size: 20px;
+}
+
+/* Auth */
+.auth-card {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+}
+
+.qr-box {
+  height: 100px;
+  border: 1px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sessions */
+.session-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.session-row .active {
+  color: green;
+  font-weight: 500;
+}
+
+.password-rules ul {
+  padding-left: 18px;
+  margin: 5px 0 0;
+}
+
+.password-rules li {
+  font-size: 13px;
+  color: #666;
+}
+
+.session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.session-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.session-card:hover {
+  background: #f9fafb;
+}
+
+.session-card.current {
+  border-color: #0d6efd;
+  background: #eef4ff;
+}
+
+.session-icon {
+  font-size: 22px;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+}
+
+.session-details {
+  flex: 1;
+}
+
+.session-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.session-meta i {
+  margin-right: 4px;
+}

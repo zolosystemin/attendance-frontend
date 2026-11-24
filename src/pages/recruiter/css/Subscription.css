@@ -1,0 +1,294 @@
+/* ==========================================
+   Subscription Page
+========================================== */
+.subscription-page {
+    min-height: 100vh;
+    padding: 35px;
+    background:
+        radial-gradient(circle at top right, #dbeafe 0%, transparent 25%),
+        radial-gradient(circle at bottom left, #e0e7ff 0%, transparent 20%),
+        #f8fafc;
+}
+
+/* ==========================================
+   Header
+========================================== */
+.subscription-header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px;
+    border-radius: 22px;
+    color: #fff;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    box-shadow:
+        0 18px 45px rgba(37, 99, 235, .22);
+}
+
+.subscription-header::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    right: -90px;
+    top: -90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .08);
+}
+
+.subscription-header h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.subscription-header p {
+    margin: 0;
+    color: rgba(255, 255, 255, .82);
+}
+
+.billing-badge {
+    z-index: 2;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ==========================================
+   Current Subscription
+========================================== */
+.subscription-summary {
+    border: none;
+    border-radius: 22px;
+    background: white;
+    box-shadow:
+        0 12px 40px rgba(15, 23, 42, .08);
+}
+
+.summary-icon {
+    width: 74px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #60a5fa);
+}
+
+.summary-title {
+    color: #94a3b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.summary-value {
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.module-badge {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   Pricing Cards
+========================================== */
+.subscription-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 22px;
+    background: white;
+    transition: .35s;
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, .08);
+}
+
+.subscription-card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 28px 60px rgba(15, 23, 42, .16);
+}
+
+.active-plan {
+    border: 2px solid #2563eb;
+}
+
+.active-plan::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 6px;
+    background:
+        linear-gradient(90deg,
+            #2563eb,
+            #60a5fa,
+            #8b5cf6);
+}
+
+/* ==========================================
+   Most Popular Ribbon
+========================================== */
+.popular-badge {
+    position: absolute;
+    right: -48px;
+    top: 22px;
+    width: 185px;
+    padding: 7px;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(135deg, #f59e0b,
+            #ea580c);
+    transform: rotate(35deg);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+/* ==========================================
+   Price
+========================================== */
+.price-section {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.price-section h1 {
+    margin: 0;
+    font-size: 58px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.price-section span {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* ==========================================
+   Modules
+========================================== */
+.feature-list {
+    margin-top: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf2f7;
+    color: #475569;
+    font-weight: 500;
+}
+
+.feature-item:last-child {
+    border: none;
+}
+
+.feature-item i {
+    font-size: 18px;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+.subscription-card .btn {
+    height: 50px;
+    border-radius: 12px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    transition: .25s;
+}
+
+.subscription-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   Badge
+========================================== */
+.badge {
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   Divider
+========================================== */
+
+.subscription-card hr,
+.subscription-summary hr {
+    border-color: #eef2f7;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+@media(max-width:992px) {
+    .subscription-page {
+        padding: 20px;
+    }
+
+    .subscription-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
+
+@media(max-width:768px) {
+    .subscription-header {
+        padding: 25px;
+    }
+
+    .price-section h1 {
+        font-size: 44px;
+    }
+
+    .summary-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .summary-value {
+        margin-bottom: 15px;
+    }
+}
+
+.upgrade-badge {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: linear-gradient(135deg,
+            #2563eb,
+            #3b82f6);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, .25);
+}
